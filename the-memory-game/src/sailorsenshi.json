@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Sailor Moon",
+        "image": "http://i63.tinypic.com/k30gb9.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 2,
+        "name": "Sailor Mercury",
+        "image": "http://i63.tinypic.com/68eerk.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 3,
+        "name": "Sailor Mars",
+        "image": "http://i65.tinypic.com/16ga91u.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 4,
+        "name": "Sailor Jupiter",
+        "image": "http://i64.tinypic.com/1qgzt5.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 5,
+        "name": "Sailor Venus",
+        "image": "./images/venus.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 6,
+        "name": "Chibi Moon",
+        "image": "http://i63.tinypic.com/307mafd.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 7,
+        "name": "Tuxedo Mask",
+        "image": "../public/css/images/tuxedomask.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 8,
+        "name": "Luna",
+        "image": "http://i66.tinypic.com/k9c6xw.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 9,
+        "name": "Sailor Neptune",
+        "image": "./images/neptune.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 10,
+        "name": "Sailor Uranus",
+        "image": "./images/uranus.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 11,
+        "name": "Sailor Pluto",
+        "image": "./images/pluto.png",
+        "clicked": false
+        
+    },
+    {
+        "id": 12,
+        "name": "Sailor Pluto",
+        "image": "./images/saturn.png",
+        "clicked": false
+        
+    }
+]
