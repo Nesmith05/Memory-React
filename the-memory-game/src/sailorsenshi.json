@@ -2,84 +2,84 @@
     {
         "id": 1,
         "name": "Sailor Moon",
-        "image": "http://i63.tinypic.com/k30gb9.png",
+        "image": "http://oi63.tinypic.com/k30gb9.jpg",
         "clicked": false
         
     },
     {
         "id": 2,
         "name": "Sailor Mercury",
-        "image": "http://i63.tinypic.com/68eerk.png",
+        "image": "http://oi63.tinypic.com/68eerk.jpg",
         "clicked": false
         
     },
     {
         "id": 3,
         "name": "Sailor Mars",
-        "image": "http://i65.tinypic.com/16ga91u.png",
+        "image": "http://oi65.tinypic.com/16ga91u.jpg",
         "clicked": false
         
     },
     {
         "id": 4,
         "name": "Sailor Jupiter",
-        "image": "http://i64.tinypic.com/1qgzt5.png",
+        "image": "http://oi64.tinypic.com/1qgzt5.jpg",
         "clicked": false
         
     },
     {
         "id": 5,
         "name": "Sailor Venus",
-        "image": "./images/venus.png",
+        "image": "http://oi68.tinypic.com/k2b9s5.jpg",
         "clicked": false
         
     },
     {
         "id": 6,
         "name": "Chibi Moon",
-        "image": "http://i63.tinypic.com/307mafd.png",
+        "image": "http://oi63.tinypic.com/307mafd.jpg",
         "clicked": false
         
     },
     {
         "id": 7,
         "name": "Tuxedo Mask",
-        "image": "../public/css/images/tuxedomask.png",
+        "image": "http://oi66.tinypic.com/jpft7a.jpg",
         "clicked": false
         
     },
     {
         "id": 8,
         "name": "Luna",
-        "image": "http://i66.tinypic.com/k9c6xw.png",
+        "image": "http://oi66.tinypic.com/k9c6xw.jpg",
         "clicked": false
         
     },
     {
         "id": 9,
         "name": "Sailor Neptune",
-        "image": "./images/neptune.png",
+        "image": "http://oi65.tinypic.com/2s9ozki.jpg",
         "clicked": false
         
     },
     {
         "id": 10,
         "name": "Sailor Uranus",
-        "image": "./images/uranus.png",
+        "image": "http://oi64.tinypic.com/i71yjo.jpg",
         "clicked": false
         
     },
     {
         "id": 11,
-        "name": "Sailor Pluto",
-        "image": "./images/pluto.png",
+        "name": "Sailor Saturn",
+        "image": "http://oi67.tinypic.com/2q3tahz.jpg",
         "clicked": false
         
     },
     {
         "id": 12,
         "name": "Sailor Pluto",
-        "image": "./images/saturn.png",
+        "image": "http://oi67.tinypic.com/2dgth8p.jpg",
         "clicked": false
         
     }
