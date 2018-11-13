@@ -23,6 +23,9 @@ class App extends Component {
   //incrementFunction
   handleIncrement = () => {
     this.setState({ score: this.state.score + 1 });
+    if (this.state.score >= this.state.topScore) {
+      this.setState({ topScore: newScore });
+    }
   }
 
   //clickFunction
@@ -30,12 +33,14 @@ class App extends Component {
     // event.preventDefault();
     this.handleIncrement();
     this.clickedStat();
+    this.resetGame();
 
     //if you click on a picture, you get a point
     //if you click on the same picture twice, you lose and reset game.
 
   }
   //shuffleFunction
+  //
   //change clicked stat
   clickedStat = clicked => {
     const sailorsenshi = this.state.sailorsenshi.filter(scout => scout.clicked !== clicked);
@@ -50,6 +55,7 @@ class App extends Component {
       this.setState({ topScore: this.state.score })
     }
     this.setState ({ score: 0});
+    alert(`Game Over :( \nscore: ${this.state.score}`);
   }
 
   render() {
@@ -68,6 +74,7 @@ class App extends Component {
             ))}
           {/* </container> */}
       </Wrapper>
+      //Footer
     );
   }
 
