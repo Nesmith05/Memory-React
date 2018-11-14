@@ -116,5 +116,7 @@ class App extends Component {
   }
 
 };
+//pseudocode
+// still need to get it to recognize whether it is clicked = true or false and work on design
 
 export default App;
