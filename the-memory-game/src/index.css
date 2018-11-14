@@ -16,6 +16,7 @@ code {
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-image: url("/the-memory-game/public/assets/css/images/c648f0d3011bae570b6bb9e2a7ddacc1.png");
 }
 
 html, body, #root {
