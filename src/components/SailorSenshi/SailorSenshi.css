@@ -7,13 +7,16 @@
     width: 325px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     text-align: left;
+    margin-bottom: 50px;
 }
   
-.card > .img-container {
-    height: 60%;
+.img-container {
+    /* height: 60%; */
     overflow: hidden;
     text-align: center;
-    background:#6CADDC;
+    /* background:#6CADDC; */
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 .card > .img-container > img {
     width: 60%

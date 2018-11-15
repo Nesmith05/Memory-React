@@ -1,6 +1,10 @@
 nav{
     background-color: orange;
     color: blue;
-    width: 100%
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
 }
+
+
 /* Do a cute gradient for the navbar depending on the background */

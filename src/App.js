@@ -5,7 +5,7 @@ import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import SailorSenshi from "./components/SailorSenshi";
 import sailorsenshi from "./sailorsenshi.json";
-import Title from "./components/Title";
+
 
 //loop for images
 for (var i = 0; i < sailorsenshi.length; i++) {
@@ -20,31 +20,12 @@ class App extends Component {
     clicked: []
   };
 
-  //incrementFunction
-  handleIncrement = () => {
-    const newScore = this.state.score + 1;
-    this.setState({ score: newScore });
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore });
-    } else if (this.state.clicked === "true") {
-      alert("not so fast");
-    }
-
-    if (newScore === 12) {
-      alert("You win!");
-    }
-    // this.shuffleDeck();
-    
-  }
-
-    
-  
-
   //clickFunction
   handleClick = (event) => {
     event.preventDefault();
-    this.handleIncrement();
     this.shuffleDeck();
+    this.handleIncrement();
+
     this.clickedStat();
    
     //if you click on the same picture twice, you lose and reset game.
@@ -54,11 +35,41 @@ class App extends Component {
     }
     if(sailorsenshi.clicked === false) {
       alert("woo");
-      return sailorsenshi.clicked = true;
+      // this.handleIncrement();
+      return {clicked: true}
 
     }
+    if(sailorsenshi.clicked === true) {
+      alert("boo");
+      this.handleIncrement();
+      this.resetGame();
+    }
+    
+
+    // if (sailorsenshi.clicked = false) {
+    //   sailorsenshi.clicked = true;
+
+    // }
 
   };
+
+    //incrementFunction
+    handleIncrement = () => {
+      const newScore = this.state.score + 1;
+      this.setState({ score: newScore });
+      if (newScore >= this.state.topScore) {
+        this.setState({ topScore: newScore });
+      } else if (this.state.clicked === "true") {
+        alert("not so fast");
+      }
+  
+      if (newScore === 12) {
+        alert("You win!");
+      }
+      // this.shuffleDeck();
+  
+      
+    }
 
   //shuffleFunction
   shuffleDeck = sailorsenshi => {
@@ -97,9 +108,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-          <Header score={this.state.score}    topScore={this.state.topScore}>Clicky Game</Header>
-          <Title>Sailor Scouts</Title>
-          {/* <container> */}
+          <Header score={this.state.score}    topScore={this.state.topScore}>Sailor Scouts</Header>
             {this.state.sailorsenshi.map(sailorscout => (
               <SailorSenshi
                 key={sailorscout.id}

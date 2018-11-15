@@ -10,10 +10,10 @@ const Header = props => (
     // </nav>
       <nav>
       <ul>
-        <li className="navbar">
-          <div>{props.title}</div>
-        </li>
-  
+        {/* <li className="navbar"> */}
+          <span>Sailor Scouts Memory Game</span>
+        {/* </li> */}
+        <br></br>
         <span id="cur-sco">Score: {props.score}</span>
   
         <span id="top-sco">Top Score: {props.topScore}</span>
