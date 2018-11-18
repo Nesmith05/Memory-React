@@ -7,16 +7,17 @@ const Header = props => (
     //     <div className="scores">
     //         Score: {props.score} Highscore: {props.highscore}
     //     </div>
-    // </nav>
+    // </nav>"https://fontmeme.com/permalink/181118/59db750078cea0a73c13b85a2edcc5d5.png""https://fontmeme.com/permalink/181118/37a873a6010337435d97c8719eab2ada.png"
       <nav>
       <ul>
         {/* <li className="navbar"> */}
-          <span>Sailor Scouts Memory Game</span>
+        {/* </li> */}
+          <span><img src="https://fontmeme.com/permalink/181118/59db750078cea0a73c13b85a2edcc5d5.png" alt="logo"></img></span>
         {/* </li> */}
         <br></br>
-        <span id="cur-sco">Score: {props.score}</span>
+        <span id="score">Score: {props.score}</span>
   
-        <span id="top-sco">Top Score: {props.topScore}</span>
+        <span id="highscore">Top Score: {props.highScore}</span>
       </ul>
     </nav>
     // <nav className="navbar">

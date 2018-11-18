@@ -3,84 +3,84 @@
         "id": 1,
         "name": "Sailor Moon",
         "image": "http://oi63.tinypic.com/k30gb9.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 2,
         "name": "Sailor Mercury",
         "image": "http://oi63.tinypic.com/68eerk.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 3,
         "name": "Sailor Mars",
         "image": "http://oi65.tinypic.com/16ga91u.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 4,
         "name": "Sailor Jupiter",
         "image": "http://oi64.tinypic.com/1qgzt5.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 5,
         "name": "Sailor Venus",
         "image": "http://oi68.tinypic.com/k2b9s5.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 6,
         "name": "Chibi Moon",
         "image": "http://oi63.tinypic.com/307mafd.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 7,
         "name": "Tuxedo Mask",
         "image": "http://oi66.tinypic.com/jpft7a.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 8,
         "name": "Luna",
         "image": "http://oi66.tinypic.com/k9c6xw.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 9,
         "name": "Sailor Neptune",
         "image": "http://oi65.tinypic.com/2s9ozki.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 10,
         "name": "Sailor Uranus",
         "image": "http://oi64.tinypic.com/i71yjo.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 11,
         "name": "Sailor Saturn",
         "image": "http://oi67.tinypic.com/2q3tahz.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     },
     {
         "id": 12,
         "name": "Sailor Pluto",
         "image": "http://oi67.tinypic.com/2dgth8p.jpg",
-        "clicked": false
+        "clicked": "unclicked"
         
     }
 ]

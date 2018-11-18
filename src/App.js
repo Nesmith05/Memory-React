@@ -1,131 +1,81 @@
-import React, { Component }from 'react';
+import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import SailorSenshi from "./components/SailorSenshi";
-import sailorsenshi from "./sailorsenshi.json";
+import cards from "./cards.json";
 
 
-//loop for images
-for (var i = 0; i < sailorsenshi.length; i++) {
 
-}
 class App extends Component {
-  //set default
-  state = {
-    sailorsenshi,
-    score: 0,
-    topScore: 0,
-    clicked: []
-  };
-
-  //clickFunction
-  handleClick = (event) => {
-    event.preventDefault();
-    this.shuffleDeck();
-    this.handleIncrement();
-
-    this.clickedStat();
-   
-    //if you click on the same picture twice, you lose and reset game.
-    if (this.state.score >= 12) {
-      this.setState({ topScore: this.state.score })
-      this.resetGame();
-    }
-    if(sailorsenshi.clicked === false) {
-      alert("woo");
-      // this.handleIncrement();
-      return {clicked: true}
-
-    }
-    if(sailorsenshi.clicked === true) {
-      alert("boo");
-      this.handleIncrement();
-      this.resetGame();
-    }
-    
-
-    // if (sailorsenshi.clicked = false) {
-    //   sailorsenshi.clicked = true;
-
-    // }
-
-  };
-
-    //incrementFunction
-    handleIncrement = () => {
-      const newScore = this.state.score + 1;
-      this.setState({ score: newScore });
-      if (newScore >= this.state.topScore) {
-        this.setState({ topScore: newScore });
-      } else if (this.state.clicked === "true") {
-        alert("not so fast");
-      }
-  
-      if (newScore === 12) {
-        alert("You win!");
-      }
-      // this.shuffleDeck();
-  
-      
-    }
-
-  //shuffleFunction
-  shuffleDeck = sailorsenshi => {
-    this.state.sailorsenshi.sort(() => Math.random() - 0.5)
-  }
-  
-  //change clicked stat
-  clickedStat = sailorsenshi => {
-    // return sailorsenshi.clicked === "true";
-    // if (sailorsenshi.clicked === "true") {
-
-    // }
-    // if (this.state.clicked.indexOf(id) === -1) {
-    //   this.handleIncrement();
-    //   this.setState({ clicked: this.state.clicked.concat(id)})
-    // } else {
-    //   this.resetGame();
-    // }
-    
+  constructor(props) {
+    super(props);
+    this.state = {
+      cards: cards,
+      highScore: 0,
+      score: 0,
+    };
+    this.cardClicked = this.cardClicked.bind(this);
   }
 
-  //resetFunction
-  resetGame = () => {
-    // if score = 12, reset game
-    //if you press the same card again, reset game
-    if (this.state.score > this.state.topScore) {
-      this.setState({ 
-        topScore: this.state.score, 
-        clicked: false,
-        score: 0
+  // check if a card has been clicked
+  cardClicked(id) {
+    let clickedCard = this.state.cards.filter(card => card.id === id)[0];
+    let shuffledCard = this.state.cards.slice().sort(function (a, b) { return 0.5 - Math.random() });
+
+
+    if (!clickedCard.clicked) {
+      clickedCard.clicked = true;
+      shuffledCard[shuffledCard.findIndex((card) => card.id === id)] = clickedCard;
+      // set the state and increment the counter
+      this.setState({
+        cards: shuffledCard,
+        score: this.state.score + 1,
+        highScore: (this.state.score + 1 > this.state.highScore ? this.state.score + 1 : this.state.highScore),
       });
     }
-    
+
+
+    else {
+
+      let resetGame = shuffledCard.map((card) => {
+        return {
+          id: card.id,
+          image: card.image,
+          clicked: false,
+        }
+      });
+      this.setState({
+        cards: resetGame,
+        score: 0,
+      });
+    }
   }
+  
+
 
   render() {
     return (
       <Wrapper>
-          <Header score={this.state.score}    topScore={this.state.topScore}>Sailor Scouts</Header>
-            {this.state.sailorsenshi.map(sailorscout => (
-              <SailorSenshi
-                key={sailorscout.id}
-                image={sailorscout.image}
-                clicked={sailorscout.clicked}
-                // onClick={this.handleClick}
-                handleClick={this.handleClick}
+        <Header score={this.state.score} highScore={this.state.highScore}/>
+        {/* <Wrapper>   */}
+          {this.state.cards.map(card => (
+            <SailorSenshi              
+              key={card.id}
+              cardClicked={this.cardClicked}
+              id={card.id}
+              image={card.image}
               />
-            ))}
-          {/* </container> */}
+          ))}
+        {/* </Wrapper> */}
+        <footer className="footer">
+					© 2018 UNC Nesmith Production
+          <a href="https://github.com/Nesmith05">GitHub</a>
+		    </footer>
       </Wrapper>
-      //Footer
     );
   }
-
-};
-//pseudocode
-// still need to get it to recognize whether it is clicked = true or false and work on design
+}
 
 export default App;

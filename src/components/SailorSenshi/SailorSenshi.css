@@ -9,6 +9,10 @@
     text-align: left;
     margin-bottom: 50px;
 }
+
+.container {
+    size: 200px;
+}
   
 .img-container {
     /* height: 60%; */
@@ -17,15 +21,19 @@
     /* background:#6CADDC; */
     margin-bottom: 15px;
     margin-right: 15px;
+    size: 200px;
+    cursor: grab;
 }
 .card > .img-container > img {
-    width: 60%
+    width: 60%;
+
 }
   
 .card > .content {
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 15px;
+    
 }
 .card > .content > ul {
     list-style-type: none;

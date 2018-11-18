@@ -1,10 +1,19 @@
 nav{
-    background-color: orange;
-    color: blue;
+    background-color: #4b719c00;
+    color: #39639D;
     width: 100%;
     padding: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
-
+span {
+    padding: 55px;
+}
+/* #score {
+    margin-right: 60px;
+}
+#highScore {
+    margin-right: 60px;
+}
+ */
 
 /* Do a cute gradient for the navbar depending on the background */
